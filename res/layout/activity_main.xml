@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jyotirmoy.officeparkingmanagement.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Press Button"
+        android:textSize="@dimen/abc_text_size_title_material"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/enter"
+        android:layout_alignBottom="@+id/enter"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="EXIT"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/enter"
+        android:layout_marginTop="58dp"
+        android:text="Available Parking Space"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/enter"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/REFRESH"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"   
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="REFRESH"
+        android:textColor="#FFFFFF"        
+        android:textSize="30sp" 
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="74dp"   
+        android:enabled="true"
+        android:linksClickable="true"
+        android:onClick="@string/abc_action_mode_done"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="ENTER"
+        android:textColor="#FFFFFF"
+        android:centerColor="#1E3AA8"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
